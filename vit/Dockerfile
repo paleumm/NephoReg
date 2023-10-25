@@ -20,8 +20,8 @@ COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 RUN pip install timm==0.9.7
 
+COPY new_vit_pseudo_2.pkl ./new_vit_pseudo_2.pkl
 COPY app.py ./app.py
-COPY new_vit.pkl ./new_vit.pkl
 
 EXPOSE 8501
 
